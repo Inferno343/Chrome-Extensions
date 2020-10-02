@@ -1,0 +1,17 @@
+{
+    "name": "YT Inferno Lyrics",
+    "version": "1.0",
+    "author": "Alex#2237",
+    "description": "View lyrics on youtube!",
+    "background": {
+          "scripts": ["background.js"],
+      "persistent": false
+    },
+    "content_scripts": [{
+      "matches": [ "*://*.youtube.com/*" ],
+            "js": [ "content.js"],
+            "css": [ "content.css"]
+    }],
+    "permissions": ["tabs"],
+    "manifest_version": 2
+  }
